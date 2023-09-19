@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="./assets/collage1.png" alt="title" />
+      <div class="navbar">
+        <div class="navicon">
+          <div></div>
+        </div>
+        <a href="#" id="showMap">Map</a>
+        <a href="#" id="showInfo">Info</a>
+        <a href="#" id="showFans">Fans</a>
+        <a href="#" id="showProfit">Profit</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="content">
+        <div id="BarbieBox">
+          <h1>
+            July 21, 2023<br />$162,022,044<br />$155,000,000 <br />$1,38
+            billion
+          </h1>
+        </div>
+        <svg id="map"></svg>
+        <div id="state-name" class="state-name-tooltip"></div>
+
+        <div id="info">
+          <div>
+            <a href="#" id="showDate">CAME OUT</a>
+            <a href="#" id="showBudget">PRODUCTION BUDGET</a>
+            <a href="#" id="showOpeningWeekend">OPENING WEEKEND</a>
+            <a href="#" id="showTotal">TOTAL</a>
+          </div>
+        </div>
+        <div id="info2">
+          <div>
+            <a href="#" id="showAge">AGE</a>
+            <a href="#" id="showGender">GENDER</a>
+            <a href="#" id="showLifestyleInterests">LIFESTYLE INTERESTS</a>
+          </div>
+        </div>
+        <div id="OppenheimerBox">
+          <h1>
+            July 21, 2023 <br />$100,000,000 <br />$80,000,000 <br />$900
+            million
+          </h1>
+        </div>
+      </div>
+      <div id="ChartContainer">
+        <canvas id="budget"></canvas>
+        <canvas id="openingWeekend"></canvas>
+        <canvas id="total"></canvas>
+        <canvas id="age"></canvas>
+        <canvas id="gender"></canvas>
+        <canvas id="lifestyleInterests"></canvas>
+        <canvas id="profit"></canvas>
+      </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
